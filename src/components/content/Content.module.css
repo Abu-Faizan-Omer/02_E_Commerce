@@ -1,0 +1,19 @@
+.map{
+     marginBottom: "20px";
+     display:flex;
+     justify-content: center;
+}
+.button{
+    padding: 6px 12px;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+justify-content: end;
+margin-left: auto;
+font-size: large;
+background-color: black;
+color: white;
+align-items: center;
+margin-left: 50px;
+cursor: pointer;
+}

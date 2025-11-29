@@ -1,0 +1,23 @@
+.nav{
+ background-color: rgb(18, 20, 20);
+display: flex;
+padding: 10px 20px;
+margin: auto;
+gap: 16px;
+text-align: center;
+border-radius: 0cm;
+font-size: large;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.button{
+    padding: 6px 12px;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+justify-content: end;
+margin-left: auto;
+font-size: large;
+}

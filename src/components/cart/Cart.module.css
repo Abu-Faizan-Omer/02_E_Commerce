@@ -1,0 +1,7 @@
+
+.close{
+    justify-content: end;
+    background-color: rgb(221, 110, 59);
+    cursor: pointer;
+    font-size: larger;
+}
