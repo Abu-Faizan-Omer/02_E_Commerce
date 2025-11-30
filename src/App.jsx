@@ -6,7 +6,7 @@ import ContextProvider, { AllContextapi } from "./components/context/ContextProv
 import Content from "./components/content/Content"
 
 const MainContent=()=>{
-  const {isModelOpen,setIsModelOpen}=useContext(AllContextapi)
+  const {isModalOpen,setIsModalOpen}=useContext(AllContextapi)
   return(
     <>
     <Navbar />
