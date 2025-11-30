@@ -32,42 +32,33 @@ function Content(){
   }
 ];
  return (
-    <div className="container">
-      <h1 className="mb-4">Products</h1>
-      <div className="row">
-        {productsArr.map((item) => (
-          <div key={item.id} className="col-md-6 col-lg-3 mb-4">
-            <div className="card h-100 shadow-sm">
-              <img 
-                src={item.imageUrl} 
-                className="card-img-top" 
-                alt={item.title}
-                style={{ height: '200px', objectFit: 'cover' }}
-              />
-              <div className="card-body">
-                <h5 className="card-title">{item.title}</h5>
-                <p className="card-text fw-bold text-success fs-5">${item.price}</p>
-                <button 
-                  className="btn btn-success w-100"
-                  onClick={() => addToCart(item)}
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="text-center">
-        <button 
-          className="btn btn-primary btn-lg"
-          onClick={() => setIsModalOpen(true)}
-        >
-          View Cart
-        </button>
-      </div>
-    </div>
+    <>
+      <h1>Products</h1>
+      {productsArr.map((item) => (
+        <div key={item.id} className={styles.productCard}>
+          <h3>{item.title}</h3>
+          <p>Price: ${item.price}</p>
+          <img
+            className={styles.productImg}
+            src={item.imageUrl}
+            alt={item.title}
+            style={{ width: "200px", height: "auto" }}
+          />
+          <button 
+            className={styles.addBtn}
+            onClick={() => addToCart(item)}
+          >
+            Add to Cart
+          </button>
+        </div>
+      ))}
+      <button 
+        className={styles.viewCartBtn}
+        onClick={() => setIsModalOpen(true)}
+      >
+        See the Cart
+      </button>
+    </>
   );
 }
-
-export default Content;
+export default Content

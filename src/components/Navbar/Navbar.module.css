@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  border-radius: 8px;
+  
   color: white;
   gap: 20px;
   font-weight: 600;
@@ -13,7 +13,7 @@
 .nav nav {
   cursor: pointer;
   padding: 8px 16px;
-  border-radius: 5px;
+
   transition: background-color 0.2s;
 }
 
