@@ -2,6 +2,10 @@ import styles from "./Navbar.module.css";
 import Cart from "../cart/Cart"
 import { useContext } from "react"
 import { AllContextapi } from "../context/ContextProvider"
+import { Link } from "react-router-dom"
+import About from "../../pages/About";
+import Home from "../../pages/Home";
+import Store from "../../pages/Store";
 function Navbar() {
   const { isModalOpen, setIsModalOpen, getTotalItems } = useContext(AllContextapi);
   const totalItems = getTotalItems();
@@ -9,9 +13,14 @@ function Navbar() {
   return (
     <>
       <div className={styles.nav}>
-        <nav>Home</nav>
-        <nav>Store</nav>
-        <nav>About</nav>
+        
+            {/* <nav>Home</nav>
+            <nav>Store</nav>
+            <nav>About</nav> */}
+            <Link to="/home">Home</Link>     
+        <Link to="/store" >Store</Link>   
+        <Link to="/about" >About</Link> 
+   
         <button 
           className={styles.button}
           onClick={() => setIsModalOpen(true)}
