@@ -19,7 +19,9 @@ function Navbar() {
             <nav>About</nav> */}
             <Link to="/home">Home</Link>     
         <Link to="/store" >Store</Link>   
+         <Link to="/contact" >Contact</Link> 
         <Link to="/about" >About</Link> 
+        
    
         <button 
           className={styles.button}

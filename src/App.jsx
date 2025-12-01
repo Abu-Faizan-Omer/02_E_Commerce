@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About";
 import Store from  "./pages/Store"
+import Contact from "./pages/Contact";
 const MainContent=()=>{
   
   return(
@@ -18,6 +19,7 @@ const MainContent=()=>{
       <Route path="/home" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/store" element={<Store/>}/>
+      <Route path="/contact" element={<Contact/>}/>
     </Routes>
      
     </>
