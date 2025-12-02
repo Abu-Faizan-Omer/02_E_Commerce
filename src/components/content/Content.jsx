@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Link } from "react-router-dom"
 import { useContext } from "react"
 import styles from "./Content.module.css"
 import { AllContextapi } from "../context/ContextProvider"
@@ -36,7 +36,7 @@ function Content(){
       <h1>Products</h1>
       {productsArr.map((item) => (
         <div key={item.id} className={styles.productCard}>
-          <h3>{item.title}</h3>
+          <h3><Link to={`/productdetails/${item.id}`}>{item.title}</Link></h3>
           <p>Price: ${item.price}</p>
           <img
             className={styles.productImg}

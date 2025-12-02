@@ -17,8 +17,10 @@ function Navbar() {
             {/* <nav>Home</nav>
             <nav>Store</nav>
             <nav>About</nav> */}
-            <Link to="/home">Home</Link>     
-        <Link to="/store" >Store</Link>   
+        <Link to="/home">Home</Link>     
+        <Link to="/store" >Store</Link>
+        <Link to="/product" >Product</Link>  
+        {/*<Link to="/productdetails/:productid" >ProductDetails</Link> if add this line then it will appear on navbar as productdetails heading*/}   
          <Link to="/contact" >Contact</Link> 
         <Link to="/about" >About</Link> 
         

@@ -9,6 +9,8 @@ import Home from "./pages/Home"
 import About from "./pages/About";
 import Store from  "./pages/Store"
 import Contact from "./pages/Contact";
+import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 const MainContent=()=>{
   
   return(
@@ -19,6 +21,8 @@ const MainContent=()=>{
       <Route path="/home" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/store" element={<Store/>}/>
+      <Route path="/product" element={<Product/>}/>
+      <Route path="/productdetails/:productId" element={<ProductDetails/>}/>
       <Route path="/contact" element={<Contact/>}/>
     </Routes>
      
